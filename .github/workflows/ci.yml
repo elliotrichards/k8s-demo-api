@@ -26,7 +26,7 @@ jobs:
       - name: Build image
         run: docker build -t k8s-demo-api:${{ github.sha }} .
       - name: Scan image with Trivy
-        uses: aquasecurity/trivy-action@v0.36.0
+        uses: aquasecurity/trivy-action@v0.74.0
         with:
           image-ref: k8s-demo-api:${{ github.sha }}
           severity: HIGH,CRITICAL
