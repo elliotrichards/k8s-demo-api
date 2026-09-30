@@ -31,4 +31,4 @@ jobs:
           image-ref: k8s-demo-api:${{ github.sha }}
           severity: HIGH,CRITICAL
           ignore-unfixed: true
-          exit-code: "0"
+          exit-code: "1"
